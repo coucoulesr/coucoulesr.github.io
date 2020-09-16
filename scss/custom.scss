@@ -1,0 +1,160 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+header {
+  position: absolute;
+  max-width: 100vw;
+  z-index: 10;
+}
+
+main {
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.jumbotron {
+  scroll-snap-align: start;
+}
+
+.hero-container {
+  background-color: #7d86ff;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../static/hero-transparent.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  z-index: 1;
+  //   overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.particles-js-canvas-el {
+  margin: 0;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.hero-text-container {
+  z-index: 10;
+}
+
+.cta-btn {
+  background-color: #cc8080;
+  color: white;
+}
+
+.cta-btn:hover {
+  background-color: #aa5050;
+  color: white;
+}
+
+.cta2-btn {
+  background-color: #8d9dca;
+  color: white;
+}
+
+.cta2-btn:hover {
+  background-color: #c9cdff;
+  color: white;
+}
+
+.spotlight-text-container-left {
+  position: relative;
+  left: -25%;
+}
+
+.spotlight-text-container-right {
+  position: relative;
+  left: 25%;
+}
+
+.diarist-spotlight {
+  background: linear-gradient(90deg, 
+  rgba(255, 255, 255, 0.7), 
+  rgba(32, 16, 64, 0.2) 60%),
+    url("../static/diarist-bg.jpg");
+  background-position: right center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.rememento-spotlight {
+  background: linear-gradient(270deg,
+  rgba(0, 0, 0, 0.7), 
+  rgba(128, 16, 16, 0.3)),
+    url("../static/rememento-bg.jpg");
+  background-position: left center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+@include media-breakpoint-down(lg) {
+  .diarist-spotlight {
+    background: linear-gradient(
+      rgba(16, 8, 32, 0.6), 
+      rgba(16, 8, 32, 0.6)),
+      url("../static/diarist-bg.jpg");
+    background-position: center top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+
+  .rememento-spotlight {
+    background: linear-gradient(
+      rgba(16, 4, 8, 0.6), 
+      rgba(16, 4, 8, 0.6)),
+      url("../static/rememento-bg.jpg");
+    background-position: center top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+
+  .spotlight-text-container-left, .spotlight-text-container-right {
+    position: static;
+  }
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: 0.25rem;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.hidden {
+  display: none;
+}
