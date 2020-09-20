@@ -10004,14 +10004,14 @@ main {
 
 @media (max-width: 1199.98px) {
   .diarist-spotlight {
-    background: linear-gradient(rgba(16, 8, 32, 0.6), rgba(16, 8, 32, 0.6)), url("../static/diarist-bg.jpg");
+    background: linear-gradient(rgba(16, 8, 32, 0.8), rgba(16, 8, 32, 0.8)), url("../static/diarist-bg.jpg");
     background-position: center top;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
 
   .rememento-spotlight {
-    background: linear-gradient(rgba(16, 4, 8, 0.6), rgba(16, 4, 8, 0.6)), url("../static/rememento-bg.jpg");
+    background: linear-gradient(rgba(16, 4, 8, 0.8), rgba(16, 4, 8, 0.85)), url("../static/rememento-bg.jpg");
     background-position: center top;
     background-size: auto 100%;
     background-repeat: no-repeat;
